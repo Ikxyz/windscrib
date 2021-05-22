@@ -11,17 +11,26 @@
 </head>
 
 <body>
-      <!-- Header -->
-      <!-- <header class="header">
+    <!-- Header -->
+    <!-- <header class="header">
         <img src="images/logo.png" width="100" alt="logo">
         <h1>WindScrib</h1>
     </header> -->
 
     <div class="main">
 
-        <p id="location" class="location"> Lagos, NG </p>
+        <label for="locationInput">Get Report For</label><br />
+        <input type="text" name="locationInput" id="locationInput">
 
-        <img class="weather-img" src="images/cloud.png" alt="weather">
+        <div>
+            <button type="button" class="myWeatherReportBtn" id="getMyWeatherReport">Get My Weather Report</button>
+            <button type="button" id="getLocationWeatherReport">Get Location Weather Report</button>
+        </div>
+
+
+        <p id="location" class="location"> </p>
+
+        <img id="weather-img" class="weather-img" src="images/cloud.png" alt="weather">
 
         <p class="weather-desc" id="weather-desc">Thunder</p>
 
